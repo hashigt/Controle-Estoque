@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Estoque</title>
+</head>
+<body>
+    <h1>Controle de Estoque</h1>
+    <div id="produto">
+        <label for="nomeProduto">Nome:</label>
+        <input type="text" id="nomeProduto" placeholder="Nome do Produto">
+        
+        <label for="categoriaProduto">Categoria:</label>
+        <input type="text" id="categoriaProduto" placeholder="Categoria do Produto">
+
+        <label for="quantidadeProduto">Quantidade:</label>
+        <input type="number" id="quantidadeProduto" placeholder="Quantidade do Produto">
+
+        <label for="precoProduto">Preço:</label>
+        <input type="number" id="precoProduto" placeholder="Preço do Produto">
+
+        <button id="btnProduto">Adicionar Produto</button>
+    </div>
+
+    <div>
+        <H1>Tabela de Produtos</H1>
+
+        <table id="tabelaProdutos">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Categoria</th>
+                    <th>Quantidade</th>
+                    <th>Preço</th>
+                    <th>Excluir</th>
+                </tr>
+            </thead>
+            <tbody id="corpoTabelas">
+
+            </tbody>
+        </table>
+        <p id="totalValor"></p>
+    </div>
+</body>
+</html>
